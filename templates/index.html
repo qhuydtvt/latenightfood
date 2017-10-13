@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Đồ ăn đêm</title>
+  </head>
+  <body>
+    <h1>Đồ ăn đêm</h1>
+
+    <!-- Item list -->
+    <div class="">
+
+      <!--  A single item -->
+      {% for food in food_list %}
+        <div class="">
+          <img src="{{ food["image"] }}" alt="">
+          <h4>{{ food["name"] }}</h4>
+          <div>{{ food["price"] }} đ</div>
+          <p>{{ food["description"] }}</p>
+          <button type="button" name="button">Thêm vào giỏ</button>
+        </div>
+      {% endfor %}
+
+    </div>
+
+  </body>
+</html>
